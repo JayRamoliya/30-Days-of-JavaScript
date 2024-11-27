@@ -1,3 +1,4 @@
+// DAY 4
 // 2665. Counter II (26-09-2024)
 
 // Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
@@ -37,7 +38,10 @@ var createCounter = function(init) {
 };
 
 // Example usage:
+
 const counter = createCounter(5);
+// console.log(counter);
+// console.log(counter.increment);
 console.log(counter.increment()); // 6
 console.log(counter.reset());     // 5
 console.log(counter.decrement()); // 4

@@ -1,3 +1,4 @@
+// DAY 2
 // 2620. Counter (23-11-2024)
 
 // Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more than the previous value every subsequent time it is called (n, n + 1, n + 2, etc).
@@ -13,7 +14,8 @@
 // counter() = 12 // Returns 1 more than the previous time.
 
 var createCounter = function(n) {
-    return function() {
+    return function(...args) {
+        console.log(...args);
         return n++;
     };
 };

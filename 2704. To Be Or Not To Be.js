@@ -1,3 +1,4 @@
+// DAY 3
 // 2704. To Be Or Not To Be (25-09-2024)
 
 // Write a function expect that helps developers test their code. It should take in any value val and return an object with the following two functions.
@@ -12,8 +13,11 @@
 // Explanation: 5 === 5 so this expression returns true.
 
 var expect = function(val) {
+    
     return {
         toBe: function(expected) {
+            console.log("test",expected);
+            
             if (val === expected) {
                 return true;
             } else {
@@ -32,6 +36,7 @@ var expect = function(val) {
 
 
 // Example usage:
+
 try {
     console.log(expect(5).toBe(5)); // Output: true
     console.log(expect(5).notToBe(4)); // Output: true
